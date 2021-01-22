@@ -8,6 +8,15 @@
     <fragment
         android:id="@+id/startFragment"
         android:name="com.example.weddingplanner.ui.StartFragment"
-        android:label="fragment_start"
-        tools:layout="@layout/fragment_start" />
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_start">
+        <action
+            android:id="@+id/action_startFragment_to_hotelFragment"
+            app:destination="@id/hotelFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hotelFragment"
+        android:name="com.example.weddingplanner.ui.HotelFragment"
+        android:label="@string/hotel_fragment_name"
+        tools:layout="@layout/fragment_hotel" />
 </navigation>
